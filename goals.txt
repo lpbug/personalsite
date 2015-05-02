@@ -1,0 +1,1 @@
+Sections: Blog, photography, resume, projects

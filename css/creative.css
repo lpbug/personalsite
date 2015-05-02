@@ -12,13 +12,14 @@ body {
 
 body {
     font-family: Merriweather,'Helvetica Neue',Arial,sans-serif;
+    background: #ffffff;
 }
 
 hr {
     max-width: 50px;
     border-color: #f05f40;
     border-width: 3px;
-}
+}x
 
 hr.light {
     border-color: #fff;
@@ -79,10 +80,12 @@ aside {
 .navbar-default {
     border-color: rgba(34,34,34,.05);
     font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
-    background-color: #fff;
+    background-color: #000000;
+    background: black;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
+    height: 50px;
 }
 
 .navbar-default .navbar-header .navbar-brand {
@@ -112,9 +115,17 @@ aside {
 
 .navbar-default .nav > li.active>a,
 .navbar-default .nav>li.active>a:focus {
-    color: #f05f40!important;
+    color: black!important;
     background-color: transparent;
 }
+
+.navbar-default.affix .nav > li.active>a,
+.navbar-default.affix .nav>li.active>a:focus {
+    color: #eb3812!important;
+    background-color: transparent;
+}
+
+
 
 .navbar-default .nav > li.active>a:hover,
 .navbar-default .nav>li.active>a:focus:hover {
@@ -124,26 +135,26 @@ aside {
 @media(min-width:768px) {
     .navbar-default {
         border-color: rgba(255,255,255,.3);
-        background-color: transparent;
+        background-color: #f05f40;
     }
 
     .navbar-default .navbar-header .navbar-brand {
-        color: rgba(255,255,255,.7);
+        color: white;
     }
 
     .navbar-default .navbar-header .navbar-brand:hover,
     .navbar-default .navbar-header .navbar-brand:focus {
-        color: #fff;
+        color: black;
     }
 
     .navbar-default .nav > li>a,
     .navbar-default .nav>li>a:focus {
-        color: rgba(255,255,255,.7);
+        color: white;
     }
 
     .navbar-default .nav > li>a:hover,
     .navbar-default .nav>li>a:focus:hover {
-        color: #fff;
+        color: #000000;
     }
 
     .navbar-default.affix {
@@ -256,6 +267,11 @@ header .header-content .header-content-inner p {
 
 .service-box p {
     margin-bottom: 0;
+}
+
+.portfolio {
+    position: relative;
+    top: 50px;
 }
 
 .portfolio-box {
